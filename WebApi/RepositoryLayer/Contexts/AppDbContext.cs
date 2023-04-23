@@ -1,5 +1,6 @@
 ﻿using DomainLayer.Configurations;
 using DomainLayer.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Contexts
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -23,6 +24,6 @@ namespace RepositoryLayer.Contexts
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<User>? Users { get; set; }
+        public DbSet<User>? Members { get; set; }
     }
 }

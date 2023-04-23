@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.Services
 {
+
     public class UserService : IUserService
     {
         private readonly IUow _uow;
@@ -23,8 +24,6 @@ namespace ServiceLayer.Services
             _mapper = mapper;
             _user = _uow.GetRepository<User>();
         }
-
-
 
         public async Task<List<UserDto>> GetAllAsync()
         {

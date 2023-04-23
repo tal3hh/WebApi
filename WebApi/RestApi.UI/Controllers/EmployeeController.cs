@@ -1,20 +1,23 @@
-﻿using Microsoft.AspNetCore.Http.Metadata;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.Metadata;
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer.DTOs.User;
 using ServiceLayer.Services.Interfaces;
+using System.Data;
 
 namespace Api.UI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UserController : ControllerBase
+    public class EmployeeController : ControllerBase
     {
         private readonly IUserService _userservice;
 
-        public UserController(IUserService userservice)
+        public EmployeeController(IUserService userservice)
         {
             _userservice = userservice;
         }
+
 
         [HttpGet]
         [Route("GetAll")]
@@ -58,8 +61,9 @@ namespace Api.UI.Controllers
             return Ok(await _userservice.GetAllByAge(min, max));
         }
 
+        [Authorize]
         [HttpPost]
-        [Route("Create")]
+        [Route("Create(Authorize)")]
         public async Task<IActionResult> Create([FromBody] UserCreateDto dto)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -69,8 +73,9 @@ namespace Api.UI.Controllers
             return Ok("Data created...");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut]
-        [Route("Update/{id}")]
+        [Route("Update(OnlyAdmin)/{id}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UserUpdateDto dto)
         {
             if (!ModelState.IsValid) return BadRequest();
@@ -80,8 +85,9 @@ namespace Api.UI.Controllers
             return Ok("Data updated...");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
-        [Route("Remove/{id}")]
+        [Route("Remove(OnlyAdmin)/{id}")]
         public async Task<IActionResult> Remove(int id)
         {
             await _userservice.RemoveAsync(id);
