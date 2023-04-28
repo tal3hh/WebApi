@@ -14,6 +14,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Serilog;
+using ServiceLayer.DTOs.Account;
+using ServiceLayer.Validations.FluentValidation.Account;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,7 +58,7 @@ builder.Services.ConfigureApplicationCookie(opt =>
 });
 #endregion
 
-#region JWTBearer
+#region JWT
 builder.Services
                 .AddAuthentication(options =>
                 {
@@ -78,10 +81,21 @@ builder.Services
 
 #endregion
 
+#region Serilog
+var logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
+#endregion
+
 #region FluentValidation
 builder.Services.AddScoped<IValidator<UserDto>, UserDtoValdiation>();
 builder.Services.AddScoped<IValidator<UserCreateDto>, UserCreateDtoValidation>();
 builder.Services.AddScoped<IValidator<UserUpdateDto>, UserUpdateDtoValidation>();
+builder.Services.AddScoped<IValidator<RegisterDto>, RegisterDtoValidation>();
+builder.Services.AddScoped<IValidator<LoginDto>, LoginDtoValidation>();
 #endregion
 
 #region Services
@@ -122,6 +136,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseResponseCaching();
 app.UseAuthentication();
 app.UseAuthorization();
 

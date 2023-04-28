@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "QKMytjENqs6BX42riJLSd+zxwRYlQnPYqlvucfH7qBw=",
+  "Hash": "/dbvulZf/3J50LEyv1UTY/3KqFkkxSEHT7Nowt7pDlk=",
   "Source": "Api.UI",
   "BasePath": "_content/Api.UI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Api.UI\\wwwroot",
+      "Source": "Api.UI",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\C#\\Api\\RestApiTest\\WebApi\\RestApi.UI\\wwwroot\\",
+      "BasePath": "_content/Api.UI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
