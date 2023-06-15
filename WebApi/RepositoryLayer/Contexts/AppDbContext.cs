@@ -21,9 +21,12 @@ namespace RepositoryLayer.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new CityConfiguration());
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<User>? Members { get; set; }
+        public DbSet<Country>? Countries { get; set; }
+        public DbSet<City>? Cities { get; set; }
     }
 }

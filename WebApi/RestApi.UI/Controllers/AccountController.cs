@@ -52,7 +52,7 @@ namespace Api.UI.Controllers
             
             var roles = await _userManager.GetRolesAsync(user);
 
-            string token = _tokenService.GenerateJwtToken(user.UserName, (List<string>)roles);
+            var token = _tokenService.GenerateJwtToken(user.UserName, (List<string>)roles);
             _logger.LogInformation("Login index'e istek atilmisdir.");
 
             return Ok(token);

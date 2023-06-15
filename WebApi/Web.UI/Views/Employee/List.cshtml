@@ -1,0 +1,44 @@
+﻿@model List<EmployeeDtoModel>
+
+@{
+    if (Model.Count>0)
+    {
+        <div class="text-end">
+        <a asp-action="Create" asp-controller="Employee">Create</a>
+        </div>
+        <table class="table">
+        <thead>
+         <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Surname</td>
+            <td>Age</td>
+            <td>Adress</td>
+            <td></td>
+         </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+                {
+                    <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td>@item.Age</td>
+                    <td>@item.Adress</td>
+                    <td>
+                    <a asp-action="Delete" asp-controller="Employee" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Remove</a>
+                    <a asp-action="Update" asp-controller="Employee" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                    </td>
+                    </tr>
+                }
+        </tbody>
+        </table>
+    }else
+    {
+        <div class="text-danger">
+        Her hansi bir data tapilmadi.
+        </div>
+    }
+
+}

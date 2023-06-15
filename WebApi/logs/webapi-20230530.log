@@ -1,0 +1,28 @@
+***2023-05-30 21:54:39 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-05-30 21:54:39 --  INF  Creating key {d45ac93a-957f-4317-b00a-ab9617ca6906} with creation date 2023-05-30 17:54:39Z, activation date 2023-05-30 17:54:39Z, and expiration date 2023-08-28 17:54:39Z.
+***2023-05-30 21:54:39 --  INF  Writing data to file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-d45ac93a-957f-4317-b00a-ab9617ca6906.xml'.
+***2023-05-30 21:54:39 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-05-30 21:54:39 --  INF  Hosting environment: Development
+***2023-05-30 21:54:39 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-05-30 21:54:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger - -
+***2023-05-30 21:54:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-05-30 21:54:40 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger - - - 301 - - 302.0292ms
+***2023-05-30 21:54:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui.css - -
+***2023-05-30 21:54:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui-bundle.js - -
+***2023-05-30 21:54:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui-standalone-preset.js - -
+***2023-05-30 21:54:40 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 578.0227ms
+***2023-05-30 21:54:41 --  INF  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+***2023-05-30 21:54:41 --  INF  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+***2023-05-30 21:54:41 --  INF  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+***2023-05-30 21:54:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui.css - - - 200 143632 text/css 122.4856ms
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 126.5308ms
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 13.7114ms
+***2023-05-30 21:54:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 193.0061ms
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 152.1048ms
+***2023-05-30 21:54:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-05-30 21:54:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - -
+***2023-05-30 21:54:41 --  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - - - 200 628 image/png 1.2005ms
+***2023-05-30 21:54:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 224.8377ms

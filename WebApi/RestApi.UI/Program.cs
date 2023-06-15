@@ -17,6 +17,10 @@ using System.Text;
 using Serilog;
 using ServiceLayer.DTOs.Account;
 using ServiceLayer.Validations.FluentValidation.Account;
+using ServiceLayer.DTOs.Country;
+using ServiceLayer.Validations.FluentValidation.Country;
+using ServiceLayer.Validations.FluentValidation.City;
+using ServiceLayer.DTOs.City;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -94,12 +98,22 @@ builder.Logging.AddSerilog(logger);
 builder.Services.AddScoped<IValidator<UserDto>, UserDtoValdiation>();
 builder.Services.AddScoped<IValidator<UserCreateDto>, UserCreateDtoValidation>();
 builder.Services.AddScoped<IValidator<UserUpdateDto>, UserUpdateDtoValidation>();
+builder.Services.AddScoped<IValidator<CityDto>, CityDtoValidation>();
+builder.Services.AddScoped<IValidator<CityCreateDto>, CityCreateDtoValidation>();
+builder.Services.AddScoped<IValidator<CityUpdateDto>, CityUpdateDtoValidation>();
+builder.Services.AddScoped<IValidator<CountryDto>, CountryDtoValidation>();
+builder.Services.AddScoped<IValidator<CountryCreateDto>, CountryCreateDtoValidation>();
+builder.Services.AddScoped<IValidator<CountryUpdateDto>, CountryUpdateDtoValidation>();
 builder.Services.AddScoped<IValidator<RegisterDto>, RegisterDtoValidation>();
 builder.Services.AddScoped<IValidator<LoginDto>, LoginDtoValidation>();
 #endregion
 
 #region Services
+
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<ICityService, CityService>();
+
 #endregion
 
 #region AutoMapper

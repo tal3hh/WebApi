@@ -1,0 +1,28 @@
+﻿@model EmployeeCreateDtoModel
+
+ <form class="m-5 p-3 w-75 shadow mx-auto" asp-action="Create" asp-controller="Employee" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name:</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <input type="text" asp-for="Name" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Surname" class="form-label">Surname:</label>
+                <span asp-validation-for="Surname" class="text-danger"></span>
+                <input type="text" asp-for="Surname" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Age" class="form-label">Age:</label>
+                <span asp-validation-for="Age" class="text-danger"></span>
+                <input type="number" asp-for="Age" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Adress" class="form-label">Adress:</label>
+                <span asp-validation-for="Adress" class="text-danger"></span>
+                <input type="text" asp-for="Adress" class="form-control"/>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary w-100">Create</button>
+            </div>
+        </form>

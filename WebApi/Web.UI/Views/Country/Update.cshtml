@@ -1,0 +1,17 @@
+﻿@model CountryUpdateDtoModel
+
+
+ <form class="m-5 p-3 w-75 shadow mx-auto" asp-action="Update" asp-controller="Country" method="post">
+
+     <input type="hidden" asp-for="Id"/>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name:</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <input type="text" asp-for="Name" class="form-control"/>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-warning w-100">Update</button>
+            </div>
+</form>
+

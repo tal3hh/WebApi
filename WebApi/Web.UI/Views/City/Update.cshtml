@@ -1,0 +1,28 @@
+﻿@using System.Text.Json
+@model CityUpdateDtoModel
+
+ <form class="m-5 p-3 w-75 shadow mx-auto" asp-action="Update" asp-controller="City" method="post">
+             
+     @{
+         TempData["Countries"] = JsonSerializer.Serialize(Model.Countries);
+     }
+            <input type="hidden" asp-for="@Model.Id"/>
+            <div class="mb-3">
+                <label class="form-label">Country:</label>
+                <select class="form-select" asp-items="@Model.Countries" asp-for="CountryId"></select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name:</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <input type="text" asp-for="Name" class="form-control"/>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Population" class="form-label">Population:</label>
+                <span asp-validation-for="Population" class="text-danger"></span>
+                <input type="number" asp-for="Population" class="form-control"/>
+            </div>
+            
+            <div class="mb-3">
+                <button class="btn btn-warning w-100">Edit</button>
+            </div>
+        </form>

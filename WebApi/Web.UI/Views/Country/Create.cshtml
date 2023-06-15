@@ -1,0 +1,13 @@
+﻿@model CountryCreateDtoModel
+
+ <form class="m-5 p-3 w-75 shadow mx-auto" asp-action="Create" asp-controller="Country" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name:</label>
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <input type="text" asp-for="Name" class="form-control"/>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary w-100">Create</button>
+            </div>
+        </form>

@@ -1,0 +1,84 @@
+***2023-06-05 21:41:17 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 21:41:17 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 21:41:17 --  INF  Hosting environment: Development
+***2023-06-05 21:41:17 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 21:41:18 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 21:41:18 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 21:41:18 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 458.5383ms
+***2023-06-05 21:41:18 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 21:41:18 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.7560ms
+***2023-06-05 21:41:18 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 112.3722ms
+***2023-06-05 21:41:18 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 21:41:18 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 232.3300ms
+***2023-06-05 22:13:34 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 22:13:34 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 22:13:34 --  INF  Hosting environment: Development
+***2023-06-05 22:13:34 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 22:13:35 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 22:13:35 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 364.1854ms
+***2023-06-05 22:13:35 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 22:13:35 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.0624ms
+***2023-06-05 22:13:35 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 22:13:35 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.4755ms
+***2023-06-05 22:13:35 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 22:13:35 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 179.4797ms
+***2023-06-05 22:14:14 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 22:14:14 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 22:14:14 --  INF  Hosting environment: Development
+***2023-06-05 22:14:14 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 22:14:14 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 22:14:14 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 286.6664ms
+***2023-06-05 22:14:14 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 22:14:14 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.5195ms
+***2023-06-05 22:14:14 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 22:14:14 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.1223ms
+***2023-06-05 22:14:14 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 22:14:14 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.1416ms
+***2023-06-05 22:15:45 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 22:15:45 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 22:15:45 --  INF  Hosting environment: Development
+***2023-06-05 22:15:45 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 22:15:45 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 22:15:45 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 323.3576ms
+***2023-06-05 22:15:45 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 22:15:45 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.4495ms
+***2023-06-05 22:15:45 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 22:15:45 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.4964ms
+***2023-06-05 22:15:46 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 22:15:46 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.5326ms
+***2023-06-05 22:17:11 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 22:17:11 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 22:17:11 --  INF  Hosting environment: Development
+***2023-06-05 22:17:11 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 22:17:11 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 22:17:11 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 355.5235ms
+***2023-06-05 22:17:11 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 22:17:11 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.1461ms
+***2023-06-05 22:17:11 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 22:17:11 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.6766ms
+***2023-06-05 22:17:11 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 22:17:12 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.1959ms
+***2023-06-05 22:19:09 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 22:19:09 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 22:19:09 --  INF  Hosting environment: Development
+***2023-06-05 22:19:09 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 22:19:09 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 22:19:10 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 361.2302ms
+***2023-06-05 22:19:10 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 22:19:10 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 6.4835ms
+***2023-06-05 22:19:10 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 22:19:10 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.2069ms
+***2023-06-05 22:19:10 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 22:19:10 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.2062ms
+***2023-06-05 22:20:15 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-05 22:20:15 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-05 22:20:15 --  INF  Hosting environment: Development
+***2023-06-05 22:20:15 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-05 22:20:15 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-05 22:20:15 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 348.8664ms
+***2023-06-05 22:20:15 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-05 22:20:15 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.1040ms
+***2023-06-05 22:20:15 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-05 22:20:15 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.6048ms
+***2023-06-05 22:20:15 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-05 22:20:16 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.9239ms

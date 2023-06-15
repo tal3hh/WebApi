@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "u71iBmCGd3MNUgx/Lq+Sxhh/8sLKBrT0QVkWbfR7KAk=",
+  "Source": "Web.UI",
+  "BasePath": "_content/Web.UI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Web.UI\\wwwroot",
+      "Source": "Web.UI",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\C#\\Api\\RestApiTest\\WebApi\\Web.UI\\wwwroot\\",
+      "BasePath": "_content/Web.UI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

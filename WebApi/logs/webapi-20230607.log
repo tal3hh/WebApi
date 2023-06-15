@@ -1,0 +1,836 @@
+***2023-06-07 12:00:42 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 12:00:42 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 12:00:42 --  INF  Hosting environment: Development
+***2023-06-07 12:00:42 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 12:00:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 12:00:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 12:00:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 12:00:42 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 40.6669ms
+***2023-06-07 12:00:42 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 444.7645ms
+***2023-06-07 12:00:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 131.6187ms
+***2023-06-07 12:00:43 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 12:00:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.4400ms
+***2023-06-07 12:02:42 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 12:02:42 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 12:02:42 --  INF  Hosting environment: Development
+***2023-06-07 12:02:42 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 12:02:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 12:02:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 12:02:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 12:02:42 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 321.0065ms
+***2023-06-07 12:02:42 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.0834ms
+***2023-06-07 12:02:42 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.7957ms
+***2023-06-07 12:02:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 12:02:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.0749ms
+***2023-06-07 12:02:54 --  INF  Request starting HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49
+***2023-06-07 12:02:54 --  INF  Executing endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:02:54 --  INF  Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceLayer.DTOs.Account.LoginDto) on controller Api.UI.Controllers.AccountController (Api.UI).
+***2023-06-07 12:02:55 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:02:56 --  INF  Executed DbCommand (81ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreateDate], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+***2023-06-07 12:02:56 --  INF  Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+***2023-06-07 12:02:56 --  INF  Login index'e istek atilmisdir.
+***2023-06-07 12:02:56 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.Account.TokenResponseDto'.
+***2023-06-07 12:02:56 --  INF  Executed action Api.UI.Controllers.AccountController.Login (Api.UI) in 2707.1647ms
+***2023-06-07 12:02:56 --  INF  Executed endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:02:56 --  INF  Request finished HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 2875.3374ms
+***2023-06-07 12:02:58 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:02:58 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:02:58 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:02:58 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:02:58 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:02:58 --  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:02:58 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:02:58 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 74.937ms
+***2023-06-07 12:02:58 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:02:58 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 165.3928ms
+***2023-06-07 12:03:06 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/3 - -
+***2023-06-07 12:03:06 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:03:06 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:03:06 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:03:06 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:03:06 --  INF  Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:03:06 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:03:06 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 50.5789ms
+***2023-06-07 12:03:06 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:03:06 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/3 - - - 200 - application/json;+charset=utf-8 59.2653ms
+***2023-06-07 12:03:23 --  INF  Request starting HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin) application/json;+charset=utf-8 70
+***2023-06-07 12:03:23 --  INF  Request finished HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin) application/json;+charset=utf-8 70 - 404 - - 3.3504ms
+***2023-06-07 12:03:34 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/3 - -
+***2023-06-07 12:03:34 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:03:34 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:03:34 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:03:34 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:03:34 --  INF  Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:03:34 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:03:34 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 29.003ms
+***2023-06-07 12:03:34 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:03:34 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/3 - - - 200 - application/json;+charset=utf-8 30.1840ms
+***2023-06-07 12:04:18 --  INF  Request starting HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin) application/json;+charset=utf-8 70
+***2023-06-07 12:04:18 --  INF  Request finished HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin) application/json;+charset=utf-8 70 - 404 - - 0.8427ms
+***2023-06-07 12:05:22 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 12:05:22 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 12:05:22 --  INF  Hosting environment: Development
+***2023-06-07 12:05:22 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 12:05:22 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 12:05:22 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 272.8616ms
+***2023-06-07 12:05:23 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 12:05:23 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 12:05:23 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.9330ms
+***2023-06-07 12:05:23 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.1455ms
+***2023-06-07 12:05:23 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 12:05:23 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.6565ms
+***2023-06-07 12:05:25 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:05:25 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:05:25 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:05:26 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:05:26 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:05:27 --  INF  Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:05:27 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:05:27 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 1877.5293ms
+***2023-06-07 12:05:27 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:05:27 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 2241.3677ms
+***2023-06-07 12:05:29 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/3 - -
+***2023-06-07 12:05:29 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:05:29 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:05:29 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:05:29 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:05:29 --  INF  Executed DbCommand (38ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:05:29 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:05:29 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 377.0099ms
+***2023-06-07 12:05:29 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:05:29 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/3 - - - 200 - application/json;+charset=utf-8 393.9781ms
+***2023-06-07 12:05:35 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - -
+***2023-06-07 12:05:35 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:05:35 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:05:35 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:05:35 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:05:35 --  INF  Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:05:35 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:05:35 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 29.5786ms
+***2023-06-07 12:05:35 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:05:35 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - - - 200 - application/json;+charset=utf-8 32.0585ms
+***2023-06-07 12:06:26 --  INF  Request starting HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 71
+***2023-06-07 12:06:26 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.Update (Api.UI)'
+***2023-06-07 12:06:26 --  INF  Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ServiceLayer.DTOs.User.UserUpdateDto) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:06:26 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:06:26 --  INF  Update index'e istek atilmisdir.
+***2023-06-07 12:06:26 --  INF  Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:06:26 --  INF  Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 100), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Members] SET [Adress] = @p0, [Age] = @p1, [CreateDate] = @p2, [Name] = @p3, [Surname] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+***2023-06-07 12:06:26 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 12:06:26 --  INF  Executed action Api.UI.Controllers.EmployeeController.Update (Api.UI) in 221.9336ms
+***2023-06-07 12:06:26 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.Update (Api.UI)'
+***2023-06-07 12:06:26 --  INF  Request finished HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 71 - 200 - text/plain;+charset=utf-8 231.1259ms
+***2023-06-07 12:06:43 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:06:43 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:06:43 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:06:43 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:06:43 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:06:43 --  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:06:43 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:06:43 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 3.9071ms
+***2023-06-07 12:06:43 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:06:43 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 4.6105ms
+***2023-06-07 12:07:06 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Employee/GetbyId/2 - -
+***2023-06-07 12:07:06 --  INF  No cached response available for this request.
+***2023-06-07 12:07:06 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:07:06 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:07:06 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:07:06 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:07:06 --  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:07:06 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:07:06 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 12.8887ms
+***2023-06-07 12:07:06 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:07:06 --  INF  The response could not be cached for this request.
+***2023-06-07 12:07:06 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Employee/GetbyId/2 - - - 200 - application/json;+charset=utf-8 24.1525ms
+***2023-06-07 12:07:12 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:07:12 --  INF  No cached response available for this request.
+***2023-06-07 12:07:12 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:07:12 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:07:12 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:07:12 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:07:12 --  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:07:12 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:07:12 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 4.9567ms
+***2023-06-07 12:07:12 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:07:12 --  INF  The response has been cached.
+***2023-06-07 12:07:12 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 7.3561ms
+***2023-06-07 12:10:30 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 12:10:30 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 12:10:30 --  INF  Hosting environment: Development
+***2023-06-07 12:10:30 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 12:10:30 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 12:10:31 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 298.2175ms
+***2023-06-07 12:10:31 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 12:10:31 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 12:10:31 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.5989ms
+***2023-06-07 12:10:31 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.3990ms
+***2023-06-07 12:10:31 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 12:10:31 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.6489ms
+***2023-06-07 12:10:59 --  INF  Request starting HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49
+***2023-06-07 12:10:59 --  INF  Executing endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:10:59 --  INF  Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceLayer.DTOs.Account.LoginDto) on controller Api.UI.Controllers.AccountController (Api.UI).
+***2023-06-07 12:11:01 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:11:02 --  INF  Executed DbCommand (102ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreateDate], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+***2023-06-07 12:11:02 --  INF  Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+***2023-06-07 12:11:02 --  INF  Login index'e istek atilmisdir.
+***2023-06-07 12:11:02 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.Account.TokenResponseDto'.
+***2023-06-07 12:11:02 --  INF  Executed action Api.UI.Controllers.AccountController.Login (Api.UI) in 3222.4561ms
+***2023-06-07 12:11:02 --  INF  Executed endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:11:02 --  INF  Request finished HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 3480.9802ms
+***2023-06-07 12:11:49 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:11:49 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:11:50 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:11:50 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:11:50 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:11:50 --  INF  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:11:50 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:11:50 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 121.5464ms
+***2023-06-07 12:11:50 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:11:50 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 269.8928ms
+***2023-06-07 12:11:57 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - -
+***2023-06-07 12:11:57 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:11:57 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:11:57 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:11:57 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:11:57 --  INF  Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:11:57 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:11:57 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 75.0723ms
+***2023-06-07 12:11:57 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:11:57 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - - - 200 - application/json;+charset=utf-8 86.5560ms
+***2023-06-07 12:12:00 --  INF  Request starting HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 70
+***2023-06-07 12:12:00 --  INF  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+***2023-06-07 12:12:00 --  INF  AuthenticationScheme: Bearer was forbidden.
+***2023-06-07 12:12:00 --  INF  Request finished HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 70 - 403 - - 15.1731ms
+***2023-06-07 12:12:05 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - -
+***2023-06-07 12:12:05 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:12:05 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:12:05 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:12:05 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:12:05 --  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:12:05 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:12:05 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 12.9876ms
+***2023-06-07 12:12:05 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:12:05 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - - - 200 - application/json;+charset=utf-8 14.3111ms
+***2023-06-07 12:12:56 --  INF  Request starting HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 74
+***2023-06-07 12:12:56 --  INF  Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+***2023-06-07 12:12:56 --  INF  AuthenticationScheme: Bearer was forbidden.
+***2023-06-07 12:12:56 --  INF  Request finished HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 74 - 403 - - 16.4399ms
+***2023-06-07 12:13:40 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 12:13:40 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 12:13:40 --  INF  Hosting environment: Development
+***2023-06-07 12:13:40 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 12:13:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 12:13:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 301.3972ms
+***2023-06-07 12:13:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 12:13:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 12:13:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 16.4241ms
+***2023-06-07 12:13:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.8060ms
+***2023-06-07 12:13:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 12:13:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.0521ms
+***2023-06-07 12:13:49 --  INF  Request starting HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49
+***2023-06-07 12:13:49 --  INF  Executing endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:13:49 --  INF  Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceLayer.DTOs.Account.LoginDto) on controller Api.UI.Controllers.AccountController (Api.UI).
+***2023-06-07 12:13:51 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:13:51 --  INF  Request starting HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49
+***2023-06-07 12:13:51 --  INF  Executing endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:13:51 --  INF  Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceLayer.DTOs.Account.LoginDto) on controller Api.UI.Controllers.AccountController (Api.UI).
+***2023-06-07 12:13:51 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:13:52 --  INF  Executed DbCommand (137ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreateDate], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+***2023-06-07 12:13:52 --  INF  Executed DbCommand (137ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreateDate], [a].[Email], [a].[EmailConfirmed], [a].[Fullname], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+***2023-06-07 12:13:52 --  INF  Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+***2023-06-07 12:13:52 --  INF  Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+***2023-06-07 12:13:53 --  INF  Login index'e istek atilmisdir.
+***2023-06-07 12:13:53 --  INF  Login index'e istek atilmisdir.
+***2023-06-07 12:13:53 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.Account.TokenResponseDto'.
+***2023-06-07 12:13:53 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.Account.TokenResponseDto'.
+***2023-06-07 12:13:53 --  INF  Executed action Api.UI.Controllers.AccountController.Login (Api.UI) in 1808.5186ms
+***2023-06-07 12:13:53 --  INF  Executed action Api.UI.Controllers.AccountController.Login (Api.UI) in 3787.7504ms
+***2023-06-07 12:13:53 --  INF  Executed endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:13:53 --  INF  Executed endpoint 'Api.UI.Controllers.AccountController.Login (Api.UI)'
+***2023-06-07 12:13:53 --  INF  Request finished HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 4016.8168ms
+***2023-06-07 12:13:53 --  INF  Request finished HTTP/1.1 POST https://localhost:44311/api/Account/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 1835.6958ms
+***2023-06-07 12:13:56 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:13:56 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:13:56 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:13:56 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:13:56 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:13:56 --  INF  Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:13:56 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:13:56 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 74.1726ms
+***2023-06-07 12:13:56 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:13:56 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 201.6273ms
+***2023-06-07 12:14:13 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - -
+***2023-06-07 12:14:13 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:14:13 --  INF  Route matched with {action = "GetbyId", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:14:13 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:14:13 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 12:14:13 --  INF  Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:14:13 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.User.UserDto'.
+***2023-06-07 12:14:13 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetbyId (Api.UI) in 57.4485ms
+***2023-06-07 12:14:13 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetbyId (Api.UI)'
+***2023-06-07 12:14:13 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetbyId/2 - - - 200 - application/json;+charset=utf-8 64.3450ms
+***2023-06-07 12:14:29 --  INF  Request starting HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 79
+***2023-06-07 12:14:29 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.Update (Api.UI)'
+***2023-06-07 12:14:29 --  INF  Route matched with {action = "Update", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ServiceLayer.DTOs.User.UserUpdateDto) on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:14:29 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:14:29 --  INF  Update index'e istek atilmisdir.
+***2023-06-07 12:14:29 --  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+WHERE [m].[Id] = @__p_0
+***2023-06-07 12:14:29 --  INF  Executed DbCommand (4ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 100), @p4='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Members] SET [Adress] = @p0, [Age] = @p1, [CreateDate] = @p2, [Name] = @p3, [Surname] = @p4
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+***2023-06-07 12:14:29 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 12:14:29 --  INF  Executed action Api.UI.Controllers.EmployeeController.Update (Api.UI) in 177.5687ms
+***2023-06-07 12:14:29 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.Update (Api.UI)'
+***2023-06-07 12:14:29 --  INF  Request finished HTTP/1.1 PUT https://localhost:44311/api/Employee/Update(OnlyAdmin)/2 application/json;+charset=utf-8 79 - 200 - text/plain;+charset=utf-8 186.9120ms
+***2023-06-07 12:22:03 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 12:22:03 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 12:22:03 --  INF  Hosting environment: Development
+***2023-06-07 12:22:03 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 12:22:03 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 12:22:04 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 166.2577ms
+***2023-06-07 12:22:04 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 12:22:04 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.0989ms
+***2023-06-07 12:22:04 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 12:22:04 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.5570ms
+***2023-06-07 12:22:04 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 12:22:04 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.9902ms
+***2023-06-07 12:22:06 --  INF  Request starting HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - -
+***2023-06-07 12:22:06 --  INF  Executing endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:22:06 --  INF  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.EmployeeController (Api.UI).
+***2023-06-07 12:22:07 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 12:22:07 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 12:22:07 --  INF  Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[Adress], [m].[Age], [m].[CreateDate], [m].[Name], [m].[Surname]
+FROM [Members] AS [m]
+***2023-06-07 12:22:07 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.User.UserDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 12:22:07 --  INF  Executed action Api.UI.Controllers.EmployeeController.GetAll (Api.UI) in 1174.9626ms
+***2023-06-07 12:22:07 --  INF  Executed endpoint 'Api.UI.Controllers.EmployeeController.GetAll (Api.UI)'
+***2023-06-07 12:22:07 --  INF  Request finished HTTP/1.1 GET https://localhost:44311/api/Employee/GetAll - - - 200 - application/json;+charset=utf-8 1351.3257ms
+***2023-06-07 20:09:39 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:10:32 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:10:44 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+***2023-06-07 20:10:45 --  INF  Applying migration '20230607161032_addCityandCounty'.
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CreateDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([Id])
+);
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Population] int NOT NULL,
+    [CountryId] int NOT NULL,
+    [CreateDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Cities_Countries_CountryId] FOREIGN KEY ([CountryId]) REFERENCES [Countries] ([Id]) ON DELETE CASCADE
+);
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Cities_CountryId] ON [Cities] ([CountryId]);
+***2023-06-07 20:10:45 --  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230607161032_addCityandCounty', N'6.0.16');
+***2023-06-07 20:41:59 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 20:42:00 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 20:42:00 --  INF  Hosting environment: Development
+***2023-06-07 20:42:00 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 20:42:00 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 20:42:00 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 20:42:00 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 20:42:00 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 680.0079ms
+***2023-06-07 20:42:00 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 17.5616ms
+***2023-06-07 20:42:01 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 127.6289ms
+***2023-06-07 20:42:01 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 20:42:01 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 306.0977ms
+***2023-06-07 20:42:42 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 20:42:43 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 20:42:43 --  INF  Hosting environment: Development
+***2023-06-07 20:42:43 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 20:42:43 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 20:42:43 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 20:42:43 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 20:42:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 654.6588ms
+***2023-06-07 20:42:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 20.0064ms
+***2023-06-07 20:42:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 135.6357ms
+***2023-06-07 20:42:44 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 20:42:44 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 299.6531ms
+***2023-06-07 20:43:02 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 26
+***2023-06-07 20:43:02 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:02 --  INF  Route matched with {action = "Create", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.Country.CountryCreateDto) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:43:05 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:43:06 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 20:43:07 --  INF  Executed DbCommand (215ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([CreateDate], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Countries]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 20:43:08 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 20:43:08 --  INF  Executed action Api.UI.Controllers.CountryController.Create (Api.UI) in 5318.3556ms
+***2023-06-07 20:43:08 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:08 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 26 - 200 - text/plain;+charset=utf-8 5745.1831ms
+***2023-06-07 20:43:27 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 23
+***2023-06-07 20:43:27 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:27 --  INF  Route matched with {action = "Create", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.Country.CountryCreateDto) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:43:27 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:43:27 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 20:43:27 --  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([CreateDate], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Countries]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 20:43:27 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 20:43:27 --  INF  Executed action Api.UI.Controllers.CountryController.Create (Api.UI) in 139.8318ms
+***2023-06-07 20:43:27 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:27 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 23 - 200 - text/plain;+charset=utf-8 147.0507ms
+***2023-06-07 20:43:37 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 24
+***2023-06-07 20:43:37 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:37 --  INF  Route matched with {action = "Create", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.Country.CountryCreateDto) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:43:37 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:43:37 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 20:43:37 --  INF  Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([CreateDate], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Countries]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 20:43:37 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 20:43:37 --  INF  Executed action Api.UI.Controllers.CountryController.Create (Api.UI) in 46.5514ms
+***2023-06-07 20:43:37 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:37 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 24 - 200 - text/plain;+charset=utf-8 54.2721ms
+***2023-06-07 20:43:42 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Country/GetAll - -
+***2023-06-07 20:43:42 --  INF  No cached response available for this request.
+***2023-06-07 20:43:42 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 20:43:42 --  INF  Route matched with {action = "GetAll", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:43:42 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:43:42 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 20:43:43 --  INF  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+***2023-06-07 20:43:43 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.Country.CountryDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 20:43:43 --  INF  Executed action Api.UI.Controllers.CountryController.GetAll (Api.UI) in 811.7292ms
+***2023-06-07 20:43:43 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 20:43:43 --  INF  The response has been cached.
+***2023-06-07 20:43:43 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Country/GetAll - - - 200 - application/json;+charset=utf-8 834.9208ms
+***2023-06-07 20:43:56 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 22
+***2023-06-07 20:43:56 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:56 --  INF  Route matched with {action = "Create", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.Country.CountryCreateDto) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:43:56 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:43:56 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 20:43:56 --  INF  Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Countries] ([CreateDate], [Name])
+VALUES (@p0, @p1);
+SELECT [Id]
+FROM [Countries]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 20:43:56 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 20:43:56 --  INF  Executed action Api.UI.Controllers.CountryController.Create (Api.UI) in 11.8595ms
+***2023-06-07 20:43:56 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.Create (Api.UI)'
+***2023-06-07 20:43:56 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/Country/Create(Authorize) application/json 22 - 200 - text/plain;+charset=utf-8 12.9201ms
+***2023-06-07 20:44:26 --  INF  Request starting HTTP/2 PUT https://localhost:44311/api/Country/Update(OnlyAdmin)/3 application/json 23
+***2023-06-07 20:44:26 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.Update (Api.UI)'
+***2023-06-07 20:44:26 --  INF  Route matched with {action = "Update", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ServiceLayer.DTOs.Country.CountryUpdateDto) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:44:26 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:44:26 --  INF  Update index'e istek atilmisdir.
+***2023-06-07 20:44:26 --  INF  Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__p_0
+***2023-06-07 20:44:26 --  INF  Executed DbCommand (9ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Countries] SET [CreateDate] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+***2023-06-07 20:44:26 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 20:44:26 --  INF  Executed action Api.UI.Controllers.CountryController.Update (Api.UI) in 552.8674ms
+***2023-06-07 20:44:26 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.Update (Api.UI)'
+***2023-06-07 20:44:26 --  INF  Request finished HTTP/2 PUT https://localhost:44311/api/Country/Update(OnlyAdmin)/3 application/json 23 - 200 - text/plain;+charset=utf-8 558.7141ms
+***2023-06-07 20:44:32 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Country/GetAll - -
+***2023-06-07 20:44:32 --  INF  No cached response available for this request.
+***2023-06-07 20:44:32 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 20:44:32 --  INF  Route matched with {action = "GetAll", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:44:32 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:44:32 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 20:44:32 --  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+***2023-06-07 20:44:32 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.Country.CountryDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 20:44:32 --  INF  Executed action Api.UI.Controllers.CountryController.GetAll (Api.UI) in 18.2237ms
+***2023-06-07 20:44:32 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 20:44:32 --  INF  The response has been cached.
+***2023-06-07 20:44:32 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Country/GetAll - - - 200 - application/json;+charset=utf-8 19.7276ms
+***2023-06-07 20:44:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Country/GetbyId/2 - -
+***2023-06-07 20:44:40 --  INF  No cached response available for this request.
+***2023-06-07 20:44:40 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.GetbyId (Api.UI)'
+***2023-06-07 20:44:40 --  INF  Route matched with {action = "GetbyId", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyId(Int32) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 20:44:40 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 20:44:40 --  INF  GetbyId index'e istek atilmisdir.
+***2023-06-07 20:44:40 --  INF  Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__p_0
+***2023-06-07 20:44:40 --  INF  Executing OkObjectResult, writing value of type 'ServiceLayer.DTOs.Country.CountryDto'.
+***2023-06-07 20:44:40 --  INF  Executed action Api.UI.Controllers.CountryController.GetbyId (Api.UI) in 18.4207ms
+***2023-06-07 20:44:40 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.GetbyId (Api.UI)'
+***2023-06-07 20:44:40 --  INF  The response could not be cached for this request.
+***2023-06-07 20:44:40 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Country/GetbyId/2 - - - 200 - application/json;+charset=utf-8 23.6741ms
+***2023-06-07 22:17:56 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 22:17:56 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 22:17:56 --  INF  Hosting environment: Development
+***2023-06-07 22:17:56 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 22:17:57 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 22:17:57 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 22:17:57 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 604.6771ms
+***2023-06-07 22:17:57 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 18.7627ms
+***2023-06-07 22:17:57 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 22:17:57 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.8683ms
+***2023-06-07 22:17:57 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 22:17:58 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 286.0501ms
+***2023-06-07 22:18:28 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63
+***2023-06-07 22:18:28 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:18:28 --  INF  Route matched with {action = "Create", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.City.CityCreateDto) on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:18:31 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:18:31 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 22:18:32 --  INF  Executed action Api.UI.Controllers.CityController.Create (Api.UI) in 3203.5722ms
+***2023-06-07 22:18:32 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:18:32 --  ERR  An unhandled exception has occurred while executing the request.AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CityCreateDto -> City
+ServiceLayer.DTOs.City.CityCreateDto -> DomainLayer.Entities.City
+   at lambda_method21(Closure , Object , City , ResolutionContext )
+   at ServiceLayer.Services.CityService.CreateAsync(CityCreateDto dto) in C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\ServiceLayer\Services\CityService.cs:line 47
+   at Api.UI.Controllers.CityController.Create(CityCreateDto dto) in C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\Controllers\CityController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+***2023-06-07 22:18:32 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63 - 500 - text/plain;+charset=utf-8 3769.3659ms
+***2023-06-07 22:19:00 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63
+***2023-06-07 22:19:00 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:19:00 --  INF  Route matched with {action = "Create", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.City.CityCreateDto) on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:19:00 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:19:15 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 22:19:42 --  INF  Executed action Api.UI.Controllers.CityController.Create (Api.UI) in 41463.4262ms
+***2023-06-07 22:19:42 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:19:42 --  ERR  An unhandled exception has occurred while executing the request.AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CityCreateDto -> City
+ServiceLayer.DTOs.City.CityCreateDto -> DomainLayer.Entities.City
+   at lambda_method21(Closure , Object , City , ResolutionContext )
+   at ServiceLayer.Services.CityService.CreateAsync(CityCreateDto dto) in C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\ServiceLayer\Services\CityService.cs:line 47
+   at Api.UI.Controllers.CityController.Create(CityCreateDto dto) in C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\Controllers\CityController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+***2023-06-07 22:19:42 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63 - 500 - text/plain;+charset=utf-8 41536.1150ms
+***2023-06-07 22:20:54 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 22:20:55 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 22:20:55 --  INF  Hosting environment: Development
+***2023-06-07 22:20:55 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 22:20:55 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 22:20:56 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 22:20:56 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 22:20:56 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 776.8155ms
+***2023-06-07 22:20:56 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 12.5279ms
+***2023-06-07 22:20:56 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.7253ms
+***2023-06-07 22:20:56 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 22:20:56 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.5351ms
+***2023-06-07 22:21:13 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63
+***2023-06-07 22:21:13 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:21:13 --  INF  Route matched with {action = "Create", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.City.CityCreateDto) on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:21:16 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:21:16 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 22:21:18 --  INF  Executed DbCommand (217ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([CountryId], [CreateDate], [Name], [Population])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Cities]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 22:21:19 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 22:21:19 --  INF  Executed action Api.UI.Controllers.CityController.Create (Api.UI) in 5111.9259ms
+***2023-06-07 22:21:19 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:21:19 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63 - 200 - text/plain;+charset=utf-8 5484.7992ms
+***2023-06-07 22:21:33 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63
+***2023-06-07 22:21:33 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:21:33 --  INF  Route matched with {action = "Create", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.City.CityCreateDto) on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:21:33 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:21:33 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 22:21:33 --  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([CountryId], [CreateDate], [Name], [Population])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Cities]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 22:21:33 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 22:21:33 --  INF  Executed action Api.UI.Controllers.CityController.Create (Api.UI) in 133.7516ms
+***2023-06-07 22:21:33 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:21:33 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 63 - 200 - text/plain;+charset=utf-8 138.9505ms
+***2023-06-07 22:22:07 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/City/GetAll - -
+***2023-06-07 22:22:07 --  INF  No cached response available for this request.
+***2023-06-07 22:22:07 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.GetAll (Api.UI)'
+***2023-06-07 22:22:07 --  INF  Route matched with {action = "GetAll", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:22:07 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:22:07 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 22:22:08 --  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[CreateDate], [c].[Name], [c].[Population]
+FROM [Cities] AS [c]
+***2023-06-07 22:22:08 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.City.CityDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 22:22:08 --  INF  Executed action Api.UI.Controllers.CityController.GetAll (Api.UI) in 826.3154ms
+***2023-06-07 22:22:08 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.GetAll (Api.UI)'
+***2023-06-07 22:22:08 --  INF  The response has been cached.
+***2023-06-07 22:22:08 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/City/GetAll - - - 200 - application/json;+charset=utf-8 872.3621ms
+***2023-06-07 22:22:36 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Country/GetAll - -
+***2023-06-07 22:22:36 --  INF  No cached response available for this request.
+***2023-06-07 22:22:36 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 22:22:36 --  INF  Route matched with {action = "GetAll", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 22:22:36 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:22:36 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 22:22:36 --  INF  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+***2023-06-07 22:22:36 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.Country.CountryDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 22:22:36 --  INF  Executed action Api.UI.Controllers.CountryController.GetAll (Api.UI) in 45.8495ms
+***2023-06-07 22:22:36 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 22:22:36 --  INF  The response has been cached.
+***2023-06-07 22:22:36 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Country/GetAll - - - 200 - application/json;+charset=utf-8 79.8471ms
+***2023-06-07 22:23:07 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/Country/GetAll - -
+***2023-06-07 22:23:07 --  INF  No cached response available for this request.
+***2023-06-07 22:23:07 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 22:23:07 --  INF  Route matched with {action = "GetAll", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 22:23:07 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:23:07 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 22:23:07 --  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+***2023-06-07 22:23:07 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.Country.CountryDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 22:23:07 --  INF  Executed action Api.UI.Controllers.CountryController.GetAll (Api.UI) in 25.6193ms
+***2023-06-07 22:23:07 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.GetAll (Api.UI)'
+***2023-06-07 22:23:07 --  INF  The response has been cached.
+***2023-06-07 22:23:07 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/Country/GetAll - - - 200 - application/json;+charset=utf-8 28.6092ms
+***2023-06-07 22:23:15 --  INF  Request starting HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 64
+***2023-06-07 22:23:15 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:23:15 --  INF  Route matched with {action = "Create", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceLayer.DTOs.City.CityCreateDto) on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:23:15 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:23:15 --  INF  Create index'e istek atilmisdir.
+***2023-06-07 22:23:15 --  INF  Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Cities] ([CountryId], [CreateDate], [Name], [Population])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Cities]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+***2023-06-07 22:23:15 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 22:23:15 --  INF  Executed action Api.UI.Controllers.CityController.Create (Api.UI) in 15.4013ms
+***2023-06-07 22:23:15 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.Create (Api.UI)'
+***2023-06-07 22:23:15 --  INF  Request finished HTTP/2 POST https://localhost:44311/api/City/Create(Authorize) application/json 64 - 200 - text/plain;+charset=utf-8 16.2188ms
+***2023-06-07 22:23:20 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/City/GetAll - -
+***2023-06-07 22:23:20 --  INF  No cached response available for this request.
+***2023-06-07 22:23:20 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.GetAll (Api.UI)'
+***2023-06-07 22:23:20 --  INF  Route matched with {action = "GetAll", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:23:20 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:23:20 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 22:23:20 --  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[CreateDate], [c].[Name], [c].[Population]
+FROM [Cities] AS [c]
+***2023-06-07 22:23:20 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.City.CityDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 22:23:20 --  INF  Executed action Api.UI.Controllers.CityController.GetAll (Api.UI) in 7.73ms
+***2023-06-07 22:23:20 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.GetAll (Api.UI)'
+***2023-06-07 22:23:20 --  INF  The response has been cached.
+***2023-06-07 22:23:20 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/City/GetAll - - - 200 - application/json;+charset=utf-8 9.0988ms
+***2023-06-07 22:24:06 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 22:24:06 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 22:24:06 --  INF  Hosting environment: Development
+***2023-06-07 22:24:06 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 22:24:06 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 22:24:07 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 22:24:07 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 22:24:07 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 26.7190ms
+***2023-06-07 22:24:07 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 683.1827ms
+***2023-06-07 22:24:07 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.8815ms
+***2023-06-07 22:24:07 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 22:24:07 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 291.1213ms
+***2023-06-07 22:24:40 --  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+***2023-06-07 22:24:40 --  INF  Application started. Press Ctrl+C to shut down.
+***2023-06-07 22:24:40 --  INF  Hosting environment: Development
+***2023-06-07 22:24:40 --  INF  Content root path: C:\Users\HP\Desktop\C#\Api\RestApiTest\WebApi\RestApi.UI\
+***2023-06-07 22:24:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 22:24:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 22:24:40 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 22:24:40 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 467.3883ms
+***2023-06-07 22:24:40 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 16.1098ms
+***2023-06-07 22:24:40 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 87.9007ms
+***2023-06-07 22:24:41 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 22:24:41 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 232.4497ms
+***2023-06-07 22:24:51 --  INF  Request starting HTTP/2 DELETE https://localhost:44311/api/Country/Remove(OnlyAdmin)/4 - -
+***2023-06-07 22:24:52 --  INF  Executing endpoint 'Api.UI.Controllers.CountryController.Remove (Api.UI)'
+***2023-06-07 22:24:52 --  INF  Route matched with {action = "Remove", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Remove(Int32) on controller Api.UI.Controllers.CountryController (Api.UI).
+***2023-06-07 22:24:55 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:24:55 --  INF  Remove index'e istek atilmisdir.
+***2023-06-07 22:24:58 --  INF  Executed DbCommand (359ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreateDate], [c].[Name]
+FROM [Countries] AS [c]
+WHERE [c].[Id] = @__p_0
+***2023-06-07 22:24:59 --  INF  Executed DbCommand (110ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Countries]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+***2023-06-07 22:24:59 --  INF  Executing OkObjectResult, writing value of type 'System.String'.
+***2023-06-07 22:24:59 --  INF  Executed action Api.UI.Controllers.CountryController.Remove (Api.UI) in 7298.2636ms
+***2023-06-07 22:24:59 --  INF  Executed endpoint 'Api.UI.Controllers.CountryController.Remove (Api.UI)'
+***2023-06-07 22:24:59 --  INF  Request finished HTTP/2 DELETE https://localhost:44311/api/Country/Remove(OnlyAdmin)/4 - - - 200 - text/plain;+charset=utf-8 7688.5560ms
+***2023-06-07 22:25:05 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - -
+***2023-06-07 22:25:05 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - - - 200 - text/html;charset=utf-8 39.8362ms
+***2023-06-07 22:25:05 --  INF  Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - -
+***2023-06-07 22:25:05 --  INF  Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - -
+***2023-06-07 22:25:05 --  INF  Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 3.0673ms
+***2023-06-07 22:25:05 --  INF  Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.3908ms
+***2023-06-07 22:25:05 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - -
+***2023-06-07 22:25:05 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.1869ms
+***2023-06-07 22:25:05 --  INF  Request starting HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - -
+***2023-06-07 22:25:05 --  INF  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+***2023-06-07 22:25:05 --  INF  Request finished HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - - - 200 628 image/png 17.6499ms
+***2023-06-07 22:25:08 --  INF  Request starting HTTP/2 GET https://localhost:44311/api/City/GetAll - -
+***2023-06-07 22:25:08 --  INF  No cached response available for this request.
+***2023-06-07 22:25:08 --  INF  Executing endpoint 'Api.UI.Controllers.CityController.GetAll (Api.UI)'
+***2023-06-07 22:25:08 --  INF  Route matched with {action = "GetAll", controller = "City"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Api.UI.Controllers.CityController (Api.UI).
+***2023-06-07 22:25:08 --  INF  Entity Framework Core 6.0.16 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+***2023-06-07 22:25:08 --  INF  GetAll index'e istek atilmisdir.
+***2023-06-07 22:25:09 --  INF  Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CountryId], [c].[CreateDate], [c].[Name], [c].[Population]
+FROM [Cities] AS [c]
+***2023-06-07 22:25:09 --  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ServiceLayer.DTOs.City.CityDto, ServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+***2023-06-07 22:25:09 --  INF  Executed action Api.UI.Controllers.CityController.GetAll (Api.UI) in 239.321ms
+***2023-06-07 22:25:09 --  INF  Executed endpoint 'Api.UI.Controllers.CityController.GetAll (Api.UI)'
+***2023-06-07 22:25:09 --  INF  The response has been cached.
+***2023-06-07 22:25:09 --  INF  Request finished HTTP/2 GET https://localhost:44311/api/City/GetAll - - - 200 - application/json;+charset=utf-8 273.4578ms

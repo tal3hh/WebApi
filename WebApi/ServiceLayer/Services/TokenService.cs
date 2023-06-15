@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using ServiceLayer.DTOs.Account;
 using ServiceLayer.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace ServiceLayer.Services
         }
 
 
-        public string GenerateJwtToken(string username, List<string> roles)
+        public TokenResponseDto GenerateJwtToken(string username, List<string> roles)
         {
             var claims = new List<Claim>
         {
@@ -46,7 +47,9 @@ namespace ServiceLayer.Services
                 signingCredentials: creds
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            var handler = new JwtSecurityTokenHandler();
+
+            return new TokenResponseDto(handler.WriteToken(token),expires);
         }
     }
 }
